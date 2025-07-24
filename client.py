@@ -35,7 +35,7 @@ def main():
         while True:
             send_random_colors()
             # Minimal delay to prevent overwhelming the ESP-01
-            time.sleep(0.03)  # ~33 FPS
+            time.sleep(0.008)
     except KeyboardInterrupt:
         print("Stopping client")
         sock.close()
